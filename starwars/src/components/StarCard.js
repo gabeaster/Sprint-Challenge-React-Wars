@@ -1,10 +1,11 @@
 import React from 'react';
+import './StarCard.css';
 import styled from 'styled-components';
 
 const Container = styled.div`
     border: 2px solid black;
-    width: 45%;
-    margin: 0 auto;
+    width: 30%;
+    margin: 22px 30px;
     border-radius: 5px;
 `;
 
