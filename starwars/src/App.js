@@ -5,6 +5,7 @@ import StarCard from './components/StarCard';
 
 const App = () => {
   const [cards, setCards] = useState([]);
+  const [species, setSpecies] =useState([])
 
   useEffect(() => {
     axios
@@ -14,10 +15,9 @@ const App = () => {
         setCards(response.data.results);
       })
       .catch(error => {
-        console.log(error);
+        console.log(`we have a people error`,error);
       })
   }, []);
-
 
   return (
     <div className="App">
@@ -25,11 +25,10 @@ const App = () => {
       {cards.map((starData, index) => {
         console.log(starData);
         return (
-          <StarCard 
+          <StarCard className="starCard"
             key={index}
             name={starData.name}
             birthYear={starData.birth_year}
-            homeworld={starData.homeworld}
           />
         )
       })}

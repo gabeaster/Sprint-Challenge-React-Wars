@@ -17,7 +17,6 @@ const StarCard = props => {
         <Container>
             <Character>{props.name}</Character>
             <p>Birth Year: {props.birthYear}</p>
-            <p>Homeworld: {props.homeworld}</p>
         </Container>
     )
 }
