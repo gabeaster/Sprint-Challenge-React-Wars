@@ -8,7 +8,7 @@ const StarCardParent = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 `;
 
